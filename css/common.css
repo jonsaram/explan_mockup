@@ -48,7 +48,7 @@ textarea:focus { outline-color: #2068d3; outline-offset: -1px; }
 a { text-decoration: none; cursor: pointer; color: #333; }
 button {border: 0 none; background: none; cursor: pointer; }
 .btn,input[type="search"]{padding:0 12px;line-height:33px;height:33px;font-size:12px;font-weight:600;border:1px solid #dadada;border-radius:4px;background:#fff;}
-.btn.select{color:#fff;border:1px solid #3C3E8A;background:#3C3E8A}
+.btn.select{color:#fff;border:1px solid #27187F;background:#27187F}
 .btn a{display:block;}
 .btn.select a{color:#fff}
 input[type="search"]{padding:0 12px 0 30px}
@@ -95,7 +95,7 @@ html,body,.tbl_scroll{scrollbar-width:thin;scrollbar-color:white;}
 .flex{display:flex;}
 .back60{background:rgba(60,62,138,.6)!important;}
 .back50{background:rgba(60,62,138,.5)!important;}
-.back100{background:#3C3E8A!important;}
+.back100{background:#27187F!important;}
 .tl{text-align:left!important;}
 .fl{float:left!important;}
 .fr{float:right!important;}
