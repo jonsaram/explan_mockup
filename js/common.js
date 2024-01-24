@@ -63,15 +63,34 @@
 
 
     /*==== Gnb 영역 너무 길때 생긴 버튼 ====*/
-    $(document).on("click", ".btn_arrow", function(){
-        $(this).parents().find('.wrap').toggleClass('resize');
-        $(this).toggleClass('on');
-    });
+    // $(document).on("click", ".btn_arrow", function(){
+    //     $(this).parents().find('.wrap').toggleClass('resize');
+    //     $(this).toggleClass('on');
+    // });
     /*==== Gnb menu active ====*/
     $(document).on("click", ".gnb li a", function(){
         $('.gnb li').removeClass('active');
         $(this).parent().addClass('active');
     });
+
+    /*==== User menu ====*/
+    $(document).on("click", ".user_login", function(){
+        $(this).toggleClass('rotate');
+        $(this).next().toggleClass('block');
+    });
+    $(document).on("click", ".user_menu li a", function(){
+        $(this).parent().parent().removeClass('block');
+        $(this).parent().parent().prev().removeClass('rotate');
+    });
+    $('html').click(function(e){
+        var $clicked2 = $(e.target);
+        if (!$clicked2.hasClass("user_menu")) {
+            $('.user_menu').removeClass('block');
+            $('.user_login').removeClass('rotate');
+        };
+    });
+
+
     /*==== Lnb menu active ====*/
     $(document).on("click", ".lnb li li>a", function(){
         $('.lnb li li').removeClass('active');
