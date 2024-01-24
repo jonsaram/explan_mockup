@@ -118,6 +118,7 @@
         });
     });
 
+    /*====== 테이블 헤더 고정 =======*/
     var sl = 0;
     $(function(){
         $.fn.hasYScrollBar = function() {
@@ -138,12 +139,17 @@
             }
         });
 
-        if ($("#userTbl").hasYScrollBar()) {
+        if ($(".tbl_body_scroll").hasYScrollBar()) {
             //y축 스크롤이 있으면 스크롤 넓이인 8px만큼 header 마지막 열 크기를 늘린다
             $(".tbl_head colgroup col:last-child").width($(".tbl_body_scroll colgroup col:last-child").width() + 8);
         } else {
             $(".tbl_head colgroup col:last-child").width($(".tbl_body_scroll colgroup col:last-child").width());
         }
+    });
+
+    /*==== lnb 영역 접고/닫기 버튼 ====*/
+    $(document).on("click", ".btn.fold", function(){
+        $(this).parent().parent().parent().toggleClass('collapse');
     });
 
 
