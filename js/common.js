@@ -198,11 +198,19 @@
         }
     });
 
+    $(document).on("click", ".file", function(){
+        $('input[type=file]#file-input').click();
+    });
+
+    $(document).on("change", "input[type=file]#file-input", function(){
+        var title = $(this).val();
+        var html = '<li><span class="txt">'+ title +'</span><button class="pay_close">닫기</button></li>';
+        $(this).parent().children().find('.approver_list').append(html);
+    });
+
+
 })(window, window.jQuery);
 
 $(document).ready(function() {
-   $('.select_box').dropdown();
-});
-$(document).resize(function(){
-
+    $('.select_box').dropdown();
 });

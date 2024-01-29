@@ -151,7 +151,7 @@
 
 	<!-- 결재 상신 팝업 -->
 	<div class="modal_wrap" id="modal-ex01">
-		<div class="modal" style="width:600px;height:450px;">
+		<div class="modal" style="width:600px;height:580px;">
 			<div class="modal_header">
 				<strong class="tit">결재 상신</strong>
 				<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
@@ -200,6 +200,15 @@
 					</dd>
 					<dt>상신 내용</dt>
 					<dd style="height:70px;"><textarea row=3 style="width:100%"></textarea></dd>
+					<dt>첨부파일</dt>
+					<dd>
+						<button type="button" class="stateBtn file"><span>파일선택</span></button>
+	            		<input name="file" type="file" id="file-input" tabindex="-1" title="파일찾기">
+						<div class="approver_list_wrap person" style="max-height:95px">
+							<ul class="approver_list">
+							</ul>
+						</div>
+					</dd>
 				</dl>
 			</div>
 			<div class="modal_footer">
@@ -212,7 +221,7 @@
 
 	<!-- 결재자 선택 팝업 -->
 	<div class="modal_wrap" id="modal-ex02">
-		<div class="modal" style="width:450px;height:400px;">
+		<div class="modal" style="width:450px;height:450px;">
 			<div class="modal_header">
 				<strong class="tit">결재자 선택</strong>
 				<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
@@ -226,7 +235,7 @@
 						</div>
 					</dd>
 					<dt>사원 리스트</dt>
-					<dd class="mb0" style="height:200px;overflow-y:auto;">
+					<dd class="mb0">
 						<div class="approver_list_wrap person">
 							<ul class="approver_list">
 								<li>
