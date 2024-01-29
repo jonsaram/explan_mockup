@@ -111,7 +111,7 @@
 									<div class="won"><span class="num">300</span>억원</div>
 								</div>
 								<figure>
-									<div class="chart" style="height:250px"></div>
+									<div class="chart" style="height:230px"></div>
 								</figure>
 							</div>
 						</section>
@@ -145,7 +145,7 @@
 								</div>
 
 								<figure>
-							    	<div class="chart01" style="height:280px;"></div>
+							    	<div class="chart01" style="height:190px;"></div>
 								</figure>
 
 							</div>
@@ -180,7 +180,7 @@
 								</div>
 
 								<figure>
-							    	<div class="chart02" style="height:280px;"></div>
+							    	<div class="chart02" style="height:190px;"></div>
 								</figure>
 							</div>
 						</section>
@@ -264,7 +264,8 @@ $(function () {
 	    chart: {
 	        plotBackgroundColor: null,
 	        plotBorderWidth: 0,
-	        plotShadow: false
+	        plotShadow: false,
+	        margin: [0, 0, 0, 0],
 	    },
 	    credits: {enabled: false},// 하이차트 워터마크 삭제
 	    title: {
@@ -275,7 +276,7 @@ $(function () {
 	        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
 	    },
 	    legend: {
-	        x:20,
+	        x:30,
 	        verticalAlign: 'bottom',
 	        y:5,
 	        itemStyle: {
@@ -297,7 +298,7 @@ $(function () {
 	            startAngle: -140,
 	            endAngle: 220,
 	            center: ['50%', '50%'],
-	            size: '115%',
+	            size: '100%',
 	            borderRadius: 50,
 	            showInLegend: true
 	        },
@@ -321,7 +322,7 @@ $(function () {
 	$('.chart01').highcharts({
 	    chart: {
 	        zoomType: 'xy',
-            margin: [40, 0, 40, 45],
+            margin: [20, 0, 30, 45],
 	    },
 	    credits: {enabled: false},// 하이차트 워터마크 삭제
 	    title: {
@@ -340,10 +341,10 @@ $(function () {
 	                fontSize: '11px'
 	            }
 	        },
-
+	        lineColor: '#DADADA', /* x축 라인색 */
 	        categories: ['202307', '202308', '202309', '202310', '202311', '202312',
 	            '202401', '202402', '202403', '202404', '202405', '202406'],
-	        crosshair: true
+	        crosshair: true /* 선택 영역 마우스 오버시 보임*/
 	    }],
 	    yAxis: [{
 	        labels: {
@@ -357,16 +358,6 @@ $(function () {
 	        title: {
 	            text: ''
 	        }
-	    }, { // Secondary yAxis
-	        title: {
-	            text: '',
-	            style: {
-	            }
-	        },
-	        labels: {
-	            format: ' '
-	        },
-	        opposite: true
 	    }],
 	    tooltip: {
 	        shared: true
@@ -375,17 +366,16 @@ $(function () {
 	        align: 'right',
 	        x:0,
 	        verticalAlign: 'top',
-	        y: 0,
+	        y:-20,
 	        itemStyle: {
 				color: '#8A8C92',
 				fontFamily: 'Noto Sans KR',
 				fontSize: '11px'
 			},
-			symbolRadius:0,//범례 심볼 radius 지정
-          	symbolWidth:10,
-          	symbolHeight:10,
-          	x: 0,//가로 위치 지정.
-            y: -2,//세로 위치 지정.
+			symbolRadius:0, //범례 심볼 radius 지정
+          	symbolWidth:10, //범례 심볼 가로 지정
+          	symbolHeight:10 //범례 심볼 세로 지정
+
 	    },
 	    plotOptions: {//라인에 원표시 삭제
 	        line:{
