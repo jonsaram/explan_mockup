@@ -198,10 +198,10 @@
         }
     });
 
+    /*==== 첨부파일 추가 ====*/
     $(document).on("click", ".file", function(){
         $('input[type=file]#file-input').click();
     });
-
     $(document).on("change", "input[type=file]#file-input", function(){
         var title = $(this).val();
         var html = '<li><span class="txt">'+ title +'</span><button class="pay_close">닫기</button></li>';
