@@ -184,10 +184,25 @@
         $(this).addClass('active');
     });
 
+     /*==== section 영역 스크롤 있을때 영역 ====*/
+    $(function(){
+        $.fn.hasScrollBar = function() {
+            return (this.prop("scrollHeight") == 0 && this.prop("clientHeight") == 0) || (this.prop("scrollHeight") > this.prop("clientHeight"));
+        };
 
+        // 스크롤 존재할 경우
+        if( $(".sec_scroll").hasScrollBar() ){
+            $(".sec_scroll").addClass('resize');
+        }else{
+           $(".sec_scroll").removeClass('resize');
+        }
+    });
 
 })(window, window.jQuery);
 
 $(document).ready(function() {
    $('.select_box').dropdown();
+});
+$(document).resize(function(){
+
 });

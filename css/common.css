@@ -91,6 +91,9 @@ html,body,.tbl_scroll{scrollbar-width:thin;scrollbar-color:white;}
 .mt25{margin-top:25px!important}
 .mb0{margin-bottom:0!important}
 .mb15{margin-bottom:15px!important}
+.ml0{margin-left:0!important}
+
+.pd0{padding:0!important}
 
 .w100{width:100%!important}
 .wauto{width:auto!important}
