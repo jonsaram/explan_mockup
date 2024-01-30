@@ -67,6 +67,7 @@
     //     $(this).parents().find('.wrap').toggleClass('resize');
     //     $(this).toggleClass('on');
     // });
+
     /*==== Gnb menu active ====*/
     $(document).on("click", ".gnb li a", function(){
         $('.gnb li').removeClass('active');
@@ -89,7 +90,6 @@
             $('.user_login').removeClass('rotate');
         };
     });
-
 
     /*==== Lnb menu active ====*/
     $(document).on("click", ".lnb li li>a", function(){
@@ -184,7 +184,7 @@
         $(this).addClass('active');
     });
 
-     /*==== section 영역 스크롤 있을때 영역 ====*/
+    /*==== section 영역 스크롤 있을때 영역 ====*/
     $(function(){
         $.fn.hasScrollBar = function() {
             return (this.prop("scrollHeight") == 0 && this.prop("clientHeight") == 0) || (this.prop("scrollHeight") > this.prop("clientHeight"));
