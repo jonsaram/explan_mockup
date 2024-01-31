@@ -88,7 +88,8 @@
 /*content*/
 .cont_wrap{padding:20px 20px;margin:0 0 0 196px;width:calc(100% - 212px);height:100%;background:#f4f5fa;}
 .cont_wrap.lnb_none{margin:0 17px;width:calc(100% - 32px);}
-.cont_top{margin-bottom:5px;padding:0 0 0 10px}
+.cont_top{margin-bottom:5px;}
+.cont_wrap > .cont_top{padding:0 0 0 10px}
 .cont_top:after{content:'';display:block;clear:both;}
 .cont_top h2{float:left;color:#27187F;font-size:20px;line-height:33px;font-family:"GmarketSans";font-weight:400;}
 .sec_scroll{overflow-y:auto;width:100%;height:calc(100% - 43px)}
@@ -269,6 +270,7 @@
 .prepare,.percent{font-size:11px;font-weight:600;position:relative;z-index:2;}
 .prepare{color:#8A8C92}
 .percent{color:#0066FF}
+.minus{color:#FF0000}
 .highcharts-figure{margin-top:-30px;width:100%}
 
 /*modal popup*/
@@ -377,6 +379,19 @@
 .before{margin-top:3px;color:#27187F;display:inline-block;}
 .employee_num{margin-top:5px}
 .employee_num,.name{margin:10px 0;font-size:13px;line-height:18px}
+
+/*bar chart*/
+.zt-skill-bar {color:#fff;font-size:11px;line-height:20px;height:20px;margin-bottom:6px;}
+.zt-skill-bar * {transition: all 0.5s ease;}
+.zt-skill-bar .data {background-color:#2ca3c0;position:relative;padding-left:35px;width:0;border-radius:2px;}
+.zt-skill-bar:nth-child(n+3) .data{background:#9fdceb;color:#333;font-weight:600;}
+.zt-skill-bar.my .data{color:#fff;background-color:#2ca3c0;text-shadow:-2px 1px 5px #006983, 2px 1px 5px #006983, 2px 1px 5px #006983, 1px -2px 5px #006983}
+
+.zt-skill-bar.minus .data{background-color:#ebc7c7;}
+.zt-skill-bar:nth-child(-n+2){text-shadow:-2px 1px 5px #006983, 2px 1px 5px #006983, 2px 1px 5px #006983, 1px -2px 5px #006983}
+.zt-skill-bar > .data > span{color:#333;font-weight:600;}
+.zt-skill-bar .data > .txtWrap > span{margin-right:10px;}
+.zt-skill-bar .txtWrap{margin-left:-25px;min-width:160px;}
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
