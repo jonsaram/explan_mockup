@@ -309,6 +309,7 @@
 .state.pay_complete{color:#2c85eb;font-weight:600}
 .state.pay_complete:before{margin-right:5px;content:'';display:inline-block;vertical-align:middle;width:8px;height:8px;border-radius:8px;background:#2c85eb}
 .stateBtn{padding:0 8px;display:inline-block;text-align:center;font-size:12px;line-height:22px;height:24px;vertical-align:middle;border:1px solid #dadada;border-radius:4px;background:#fff;}
+.stateBtn.file{margin-top:4px;}
 .stateBtn + .stateBtn{margin-left:5px}
 .stateBtn.drafter{width:135px;background:#F2F5F8}
 .stateBtn.toggle.active{color:#fff;background:#3ba8c3}
