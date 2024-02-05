@@ -68,7 +68,7 @@
 		</nav>
 		<div class="cont_wrap">
 			<div class="cont_top">
-				<h2><a href="company_board.html" class="before"><i class="icon_long_arrow_left"></i>공지사항 리스트로 가기</a></h2>
+				<h2><a href="company_board.html" class="before"><i class="icon_long_arrow_left"></i>공지사항</a></h2>
 			</div>
 
 			<section class="sec_wrap list" style="height:calc(100% - 43px);">
@@ -80,22 +80,48 @@
 							<col />
 							<col style="width:100px;" />
 							<col />
+							<col style="width:100px;" />
+							<col />
+							<col style="width:100px;" />
+							<col />
 						</colgroup>
 						<tbody>
 							<tr>
 								<th scope="row">제목</th>
-								<td colspan="3">사내 직함/직급에 대한 승격 통보</td>
+								<td colspan="7">공지 사항입니다</td>
 							</tr>
 							<tr>
-								<th scope="row">게시일자</th>
-								<td>2024-01-01</td>
 								<th scope="row">작성자</th>
 								<td>이희성</td>
+								<th scope="row">작성일</th>
+								<td>2024-01-01 12:05:05</td>
+								<th scope="row">조회</th>
+								<td>112</td>
+								<th scope="row">댓글</th>
+								<td>11</td>
+							</tr>
+							<tr>
+								<th scope="row">첨부파일</th>
+								<td colspan="7">
+									<button type="button" class="stateBtn file"><span>파일선택</span></button>
+	            					<input name="file" type="file" id="file-input" tabindex="-1" title="파일찾기">
+									<div class="approver_list_wrap person">
+										<ul class="approver_list">
+											<li><span class="txt">첨부파일 입니다.txt / 15.1 Mb</span><button class="pay_close">닫기</button></li>
+											<li><span class="txt">첨부파일 입니다2.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
+											<li><span class="txt">첨부파일 입니다3.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
+											<li><span class="txt">첨부파일 입니다4.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
+										</ul>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<th scope="row">내용</th>
-								<td colspan="3">
-									<div style="max-height:300px;overflow:auto;">
+								<td colspan="7">
+									<div style="min-height:200px;overflow:auto;">
+										고객 컨설팅 비용 결재 부탁 드립니다.<br>
+										고객 컨설팅 비용 결재 부탁 드립니다.<br>
+										고객 컨설팅 비용 결재 부탁 드립니다.<br>
 										고객 컨설팅 비용 결재 부탁 드립니다.<br>
 										고객 컨설팅 비용 결재 부탁 드립니다.<br>
 										고객 컨설팅 비용 결재 부탁 드립니다.<br>
@@ -113,23 +139,29 @@
 								</td>
 							</tr>
 							<tr>
-								<th scope="row">첨부파일</th>
-								<td colspan="3">
-									<div class="approver_list_wrap person">
-										<ul class="approver_list">
-											<li>
-												<span class="txt">파일명입니다.text</span>
-											</li>
-											<li>
-												<span class="txt">파일명입니다.text</span>
-											</li>
-											<li>
-												<span class="txt">파일명입니다.text</span>
-											</li>
-											<li>
-												<span class="txt">파일명입니다.text</span>
-											</li>
-										</ul>
+								<th scope="row">댓글</th>
+								<td colspan="7">
+									<div class="comment_wrap">
+										<div class="comment">
+											<p>
+												<textarea rows="2" style="width:calc(100% - 60px)"></textarea>
+												<button class="btn ml5" style="height:58px">등록</button>
+											</p>
+										</div>
+										<div class="comment">
+											<strong>위성열</strong>
+											<span>2024-01-01 12:05:05</span>
+											<p>전 댓글이예요 전 댓글이예요 전 댓글이예요 전 댓글이예요 전 댓글이예요 전 댓글이예요 전 댓글이예요 전 댓글이예요 전 댓글이예요</p>
+											<div class="com_btnArea">
+												<button class="stateBtn">수정</button>
+												<button class="stateBtn">삭제</button>
+											</div>
+										</div>
+										<div class="comment">
+											<strong>유태원</strong>
+											<span>2024-01-01 12:05:05</span>
+											<p>저도 댓글 오키?</p>
+										</div>
 									</div>
 								</td>
 							</tr>
