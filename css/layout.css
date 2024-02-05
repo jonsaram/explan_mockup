@@ -242,7 +242,8 @@
 .tbl01.col > table > tbody > tr:hover{background:#f2f3ff;}
 .tbl01 > table > tbody > tr.expiration_date td{background:#FFF2F2}
 .tbl01 > table > tbody > tr.expiration_date td:nth-child(14){color:#e90808;font-weight:600}
-.tbl01.row.board > table > tbody > tr > td{padding:10px 15px;position:relative;}
+.tbl01.row.board > table > tbody > tr > td{padding:10px 15px;position:relative;border-bottom:1px solid #e3e3e3;}
+.tbl01.row.board > table > tbody > tr:last-child > td{border-bottom:1px solid #c4c5c8;}
 .tbl01.row.board > table > tbody > tr:first-child > td{border-bottom:2px solid #27187F;}
 .tbl01.row.board h3{padding:5px 0;font-size:23px;font-weight:normal;}
 .tbl01.row.board h4{margin-top:2px;vertical-align:middle;display:inline-block;}
@@ -335,7 +336,7 @@
 .tbl01.row .approver_list_wrap.person{margin-bottom:5px}
 .approver_list .txt{margin-left:8px;width:calc(100% - 160px);font-size:12px;display:inline-block;vertical-align:middle;line-height:24px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .approver_list_wrap.person .approver_list .txt{padding:0 8px;margin-left:0;width:100%;}
-.approver_list_wrap.person{margin-top:5px;max-height:200px;border:1px solid #DADADA;border-radius:4PX;}
+.approver_list_wrap.person{margin-top:5px;max-height:200px;border:1px solid #DADADA;border-radius:4PX;min-height:28px}
 .approver_list .pay_close{font-size:0;position:absolute;top:calc(50% - 6px);right:8px;display:inline-block;width:12px;height:12px;}
 .approver_list .pay_close:before{position:absolute;top:0;left:6px;content:' ';width:1px;height:12px;background-color:#333;transform:rotate(45deg);}
 .approver_list .pay_close:after{position:absolute;top:0;left:6px;content:' '; width:1px;height:12px;background-color:#333;transform:rotate(-45deg);}
