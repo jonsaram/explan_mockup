@@ -415,13 +415,13 @@
 .comment_wrap .comment strong{margin-right:15px;display:inline-block;font-size:13px;}
 .comment_wrap .comment span{font-size:12px;color:#898a8c;}
 .comment_wrap .comment p{margin:5px 5px 10px 0;width:100%;display:inline-block;line-height:20px;}
-.comment_wrap .comment:nth-child(n + 2) p{width:calc(100% - 100px);}
+.comment_wrap .comment:nth-child(n + 2) p{width:calc(100% - 120px);}
 .comment_wrap .comment:nth-child(1) p{margin:0 5px 10px 0}
 .comment_wrap .comment:last-child{border-bottom:0;margin-bottom:0}
 .comment_wrap .comment:last-child p{margin-bottom:0}
 
 /*button*/
-.com_btnArea{font-size:0;display:inline-block;vertical-align:top;}
+.com_btnArea{font-size:0;display:inline-block;vertical-align:middle;}
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
