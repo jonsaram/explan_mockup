@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Start Asset</title>
+	<link rel="stylesheet" type="text/css" href="../css/libs/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/libs/highcharts.js"></script>
+	<script type="text/javascript" src="../js/libs/index.global.js"></script>
+
+</head>
+<body class="main">
+	<header id="header">
+		<div class="wrap">
+			<h1 class="logo"><a href="main.html">Start Asset</a></h1>
+			<nav class="gnb">
+				<ul>
+					<li><a href="main.html">성과관리</a></li>
+					<li><a href="fa_dashboard.html">FA 대쉬보드</a></li>
+					<li><a href="personnel_info.html">인사정보</a></li>
+					<li><a href="performance_ranking.html">실적랭킹</a></li>
+					<li class="active"><a href="calender.html">캘린더</a></li>
+					<li><a href="qdvisory_progress_status.html">자문 진행 현황</a></li>
+					<li><a href="customer_list.html">고객리스트</a></li>
+					<li><a href="customer_dashboard.html">고객 대쉬보드</a></li>
+					<li><a href="salary_info.html">급여정보</a></li>
+					<li><a href="enter_performance.html">실적입력</a></li>
+					<li><a href="electronic_pay.html">전자결재</a></li>
+					<li><a href="erp.html">ERP</a></li>
+					<li><a href="company_board.html">사내게시판</a></li>
+					<li><a href="work_history.html">작업 히스토리</a></li>
+				</ul>
+			</nav>
+			<div class="header_right">
+				<div class="head-btn-wrap">
+			        <button class="menu-btn">
+			            <span class="line line1"></span>
+			            <span class="line line2"></span>
+			            <span class="line line3"></span>
+			        </button>
+			    </div>
+				<button type="button" class="btn_arrow"></button>
+				<a href="#" class="alarm">알림</a>
+				<a href="#" class="user_login"><span>이희성</span></a>
+				<ul class="user_menu">
+					<li><a href="../admin/admin_01.html"><i class="icon_admin"></i>관리자 페이지</a></li>
+					<li><a href="#"><i class="icon_pwEdit"></i>비밀번호 변경</a></li>
+					<li><a href="#"><i class="icon_logout"></i>로그아웃</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="cont_wrap lnb_none">
+			<div class="cont_top">
+				<h2><i class="icon_bullet"></i>캘린더</h2>
+			</div>
+			<div class="sec_scroll">
+				<section class="sec_wrap">
+					<!-- 스케줄 왼쪽 -->
+					<div class="schedule left">
+						<div class="cont_top">
+							<div class="today_schedule">
+								<i class="icon_calendar_mark"></i>
+								<div class="tit_schedule">오늘의 일정</div>
+								<span class="num">2개</span>
+							</div>
+						</div>
+						<!-- 왼쪽 박스 영역 -->
+						<div class="schedule_wrap">
+							<div class="datepicker"></div>
+							<div class="stit_schedule">하위 팀원 업무 스케줄 확인</div>
+							<div class="check_subTeam_wrap"></div>
+							<div class="stit_schedule">업무 유형</div>
+							<ul class="status_wrap">
+								<li><i class="status meeting"></i><span>미팅</span></li>
+								<li><i class="status tel_consul"></i><span>전화상담</span></li>
+								<li><i class="status other_work"></i><span>그 외 업무</span></li>
+								<li><i class="status send_email"></i><span>이메일 전송</span></li>
+								<li><i class="status schedule"></i><span>회사 내부 일정</span></li>
+								<li><i class="status seminar"></i><span>세미나</span></li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- 스케줄 오른쪽 -->
+					<div class="schedule right">
+						<div id='calendar'></div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+
+var calendarEl = document.getElementById('calendar');
+var calendar = new FullCalendar.Calendar(calendarEl, {
+	height: '100%',
+	expandRows: true,
+	// slotMinTime: '08:00',
+	// slotMaxTime: '20:00',
+	headerToolbar: {
+		// left: 'prev,next today',
+		left: '',
+		center: 'title',
+		right: 'prev,next,timeGridDay,timeGridWeek,dayGridMonth'
+		// right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+	},
+	initialView: 'dayGridMonth',
+	//initialDate: '2024-01-12',  //달력 처음 로드될때 표시되는 날짜
+	navLinks: true, // 요일이랑 날짜 클릭시 일단위,주단위로 보여주는 화면으로 넘어감
+	editable: true, // 드래그해서 수정 가능한지, 길게 확장도 가능
+	selectable: true,
+	nowIndicator: true,
+	dayMaxEvents: true, // "more" 표시 전 최대 이벤트 갯수, true는 셀 높이에 의해 결정
+	events: [
+		{
+			title: '세미나',
+			start: '2024-02-06T09:00:00',
+			color : "#d770c0",
+			textColor : "#fff"
+		},
+		{
+			title: '이메일 전송',
+			start: '2024-02-06T15:00:00',
+			end: '2024-02-06T16:00:00',
+			color : "#72bfd2",
+			textColor : "#fff"
+		},
+		{
+			title: '그 외 업무',
+			start: '2024-02-20T13:00:00',
+			end: '2024-02-20T15:00:00',
+			color : "#8dcc76",
+			textColor : "#fff"
+		},
+		{
+			title: '전화상담',
+			start: '2024-02-21T11:00:00',
+			end: '2024-02-21T11:30:00',
+			color : "#e5b266",
+			textColor : "#fff"
+		},
+		{
+			title: '미팅',
+			start: '2024-02-23T10:00:00',
+			end: '2024-02-23T11:00:00',
+			color : "#EE7C7C",
+			textColor : "#fff"
+		},
+		{
+			title: '회사 내부 일정',
+			start: '2024-02-23T15:00:00',
+			end: '2024-02-23T17:00:00',
+			color : "#7E7CEE",
+			textColor : "#fff"
+		}
+	]
+});
+calendar.render();
+</script>
+</html>
