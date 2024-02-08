@@ -981,6 +981,7 @@ a.ui-button:focus {
 .ui-visual-focus {
 	box-shadow: 0 0 3px 1px rgb(94, 158, 214);
 }
+
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active,
@@ -1008,20 +1009,24 @@ a.ui-button:active,
 	text-decoration: none;
 }
 
-/* Interaction Cues
-----------------------------------*/
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #3ba8c3;
-	background: rgba(59,168,195,.7);
-	color: #fff;
+/*	border: 1px solid #3ba8c3;*/
+	border: 1px solid #e3d380;
+/*	background: rgba(59,168,195,.7);*/
+	background: #fff4bb;
+	color: #333;
 	width:24px;
 	height:24px;
 	line-height:20px;
 	border-radius:50%;
 	text-align:center;
 }
+
+/* Interaction Cues
+----------------------------------*/
+
 .ui-state-checked {
 	border: 1px solid #dad55e;
 	background: #fffa90;
