@@ -432,8 +432,8 @@
 .comment_wrap .comment:last-child p{margin-bottom:0}
 
 /*schedule*/
-.cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .schedule.left{width:323px;height:100%;}
-.cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .schedule.right{position:relative;width:calc(100% - 348px);height:100%;min-height:100%}
+.cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .schedule.left{width:20%;height:100%;}
+.cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .schedule.right{position:relative;width:calc(80% - 20px);height:100%;min-height:100%}
 .icon_calendar_mark{display:inline-block;width:30px;height:30px;vertical-align:middle;border-radius:50%;background:#27187F url(../img/icon_calendar_mark.png) no-repeat 50% 45%;}
 .today_schedule{margin:0 auto 10px;position:relative;width:90%;}
 .tit_schedule{vertical-align:middle;display:inline-block;font-size:20px;font-weight:600;line-height:31px;}
