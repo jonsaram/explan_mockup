@@ -9,13 +9,26 @@
         });
         $($open_ul).find("input[type=radio]").on("click", function(){
             var $var = $( this ).next().text();
-            $( this ).parent().parent().prev().children().text( $var );
-            $( this ).parent().parent().prev().children().addClass( "active" );
+            var $state = $(this).parent().children().find(".status");
+            var $color = $(this).parent().children().find(".status").attr('class');
+            var $htmlState = '<i class="' +  $color + '" style="padding-right:5px;top:-1px"></i>';
+            if($state.hasClass("status") === true) {
+                $(this).parent().parent().prev().children().prepend($htmlState);
+            }
+            $(this).parent().parent().prev().children().find('span').text( $var );
+            $(this).parent().parent().prev().children().addClass( "active" );
             $(this).next().addClass("active"); $(this).parent().siblings().find("label").removeClass("active");
-            $( this ).parent().parent().addClass("viewHide");
+            $(this).parent().parent().addClass("viewHide");
+
         });
         $($open_ul).find("input[type=radio]").on("focus", function(){
             var $var = $( this ).next().text();
+            var $state = $(this).parent().children().find(".status");
+            var $color = $(this).parent().children().find(".status").attr('class');
+            var $htmlState = '<i class="' +  $color + '" style="padding-right:5px;top:-1px"></i>';
+            if($state.hasClass("status") === true) {
+                $(this).parent().parent().prev().children().prepend($htmlState);
+            }
             $( this ).parent().parent().prev().children().text( $var );
             $( this ).parent().parent().prev().children().addClass( "active" );
             $(this).next().addClass("active"); $(this).parent().siblings().find("label").removeClass("active");

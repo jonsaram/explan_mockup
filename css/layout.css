@@ -110,7 +110,7 @@
 .select_box .radio{width:100%;box-sizing:border-box}
 .select_box .radio{position:relative;text-align:left;z-index:10;}
 .select_box .radio:after{content:'';position:absolute;top:14px;right:15px;display:inline-block;border:5px solid transparent;border-top-color:#333;}
-.select_box .radio span{display:block;padding:0 25px 0 0;margin-right:0;font-size:12px;font-weight:600;line-height:33px;cursor:pointer}
+.select_box .radio span{display:block;padding:0 25px 0 0;margin-right:0;font-size:12px;font-weight:600;line-height:32px;cursor:pointer}
 .dropdown{position:relative;}
 .dropdown .arrow{position:relative;width:100%;text-align:left;}
 .dropdown .arrow:after{content:'';position:absolute;top:14px;right:15px;display:inline-block;border:5px solid transparent;border-top-color:#333;}
@@ -460,8 +460,8 @@
 .fc .fc-toolbar.fc-header-toolbar{margin-bottom:10px;}
 .fc-event .fc-event-main{width:100%;margin:0 5px;}
 .fc-direction-ltr .fc-daygrid-event .fc-event-time{position:absolute;right:0;text-transform:uppercase;}
-.fc .fc-highlight{width:24px;height:24px;background:#27187F;inset:initial;right:0;line-height:20px;border-radius:50%;}
-.fc .fc-daygrid-day-frame:has(.fc-highlight) .fc-daygrid-day-number{width:24px;height:24px;border-radius:50%;text-align:center;color:#fff}
+.fc .fc-highlight{width:24px;height:24px;inset:initial;right:0;line-height:20px;border-radius:50%;background:#27187F;}
+.fc .fc-daygrid-day-frame:has(.fc-highlight) .fc-daygrid-day-number{width:24px;height:24px;line-height:15px;border-radius:50%;text-align:center;color:#fff}
 .fc .fc-button-primary{background-color:#ffffff;border-color:#dddddd;color:#333;border-radius:20px;}
 .fc .fc-button-primary:hover{background-color:#27187F;border-color:#27187F;}
 .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active{background-color:inherit;border-color:inherit;border:2px solid #27187F;color:#27187f;font-weight:bold;}
@@ -469,6 +469,9 @@
 .fc .fc-button-primary:focus{box-shadow:0 0 0 .2rem rgba(76,91,106,0);border:2px solid #27187F;color:#27187f;font-weight:bold;}
 .fc .fc-button-primary:hover{color:#fff}
 .fc .fc-button-group{margin-right:130px;}
+.fc .fc-daygrid-day-number{width:24px;height:24px;border-radius:50%;text-align:center;border:1px solid transparent;}
+.fc a[data-navlink]:hover{color:#333!important;border:1px solid #ccc!important;width:24px;height:24px;border-radius:50%;background:#eee;}
+.fc .fc-daygrid-event{cursor:default;}
 .icon_add_circle:after{margin:-3px 5px 0 0;content:"";display:inline-block;width:13px;height:13px;vertical-align:middle;background:url(../img/icon_add_circle.png);}
 
 /*button*/

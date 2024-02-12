@@ -98,12 +98,140 @@
 									<li>제목 검색</li>
 								</ul>
 							</div>
-							<button type="button" class="btn select schedule_btn"><i class="icon_add_circle"></i>일정추가하기</button>
+							<a href="#modal-ex" class="btn select schedule_btn"><i class="icon_add_circle"></i>일정추가하기</a>
 						</div>
 						<div id='calendar'></div>
 					</div>
 				</section>
 
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 캘린더 일정추가 팝업 -->
+	<div class="modal_wrap" id="modal-ex">
+		<div class="modal" style="width:500px;height:550px;">
+			<div class="modal_header">
+				<strong class="tit">캘린더 일정추가</strong>
+				<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+			</div>
+			<div class="modal_body" style="overflow:visible;">
+				<dl class="info_wrap">
+					<dt>제목</dt>
+					<dd><input type="text" style="width:100%"></dd>
+					<dt>회사명</dt>
+					<dd><button type="button" class="btn select">고객 불러오기</button></dd>
+					<dt>업무 유형</dt>
+					<dd>
+						<div class="select_box">
+							<button type="button" class="btn radio"><span>전체</span></button>
+		                    <ul class="select_lst">
+		                        <li>
+		                            <input name="work" id="work01" type="radio" value="">
+		                            <label for="work01"><i class="status meeting"></i><span>미팅</span><i class="icon_check"></i></label>
+		                        </li>
+		                        <li>
+		                            <input name="work" id="work02" type="radio" value="">
+		                            <label for="work02"><i class="status tel_consul"></i><span>전화상담</span><i class="icon_check"></i></label>
+		                        </li>
+		                        <li>
+		                            <input name="work" id="work03" type="radio" value="">
+		                            <label for="work03"><i class="status other_work"></i><span>그 외 업무</span><i class="icon_check"></i></label>
+		                        </li>
+		                        <li>
+		                            <input name="work" id="work04" type="radio" value="">
+		                            <label for="work04"><i class="status send_email"></i><span>이메일 전송</span><i class="icon_check"></i></label>
+		                        </li>
+		                        <li>
+		                            <input name="work" id="work05" type="radio" value="">
+		                            <label for="work05"><i class="status schedule"></i><span>회사 내부 일정</span><i class="icon_check"></i></label>
+		                        </li>
+		                        <li>
+		                            <input name="work" id="work06" type="radio" value="">
+		                            <label for="work06"><i class="status seminar"></i><span>세미나</span><i class="icon_check"></i></label>
+		                        </li>
+		                    </ul>
+		                </div>
+					</dd>
+					<dt>일정</dt>
+					<dd>
+						<div class="clearFix">
+							<div class="calendar_wrap fl">
+								<input type="text" class="datepicker" style="width:185px">
+							</div>
+							<div class="select_box fl" style="width:calc(100% - 196px)">
+								<button type="button" class="btn radio"><span>전체</span></button>
+			                    <ul class="select_lst">
+			                        <li>
+			                            <input name="schedule" id="schedule01" type="radio" value="">
+			                            <label for="schedule01"><span>반복 안함</span><i class="icon_check"></i></label>
+			                        </li>
+			                        <li>
+			                            <input name="schedule" id="schedule02" type="radio" value="">
+			                            <label for="schedule02"><span>매일</span><i class="icon_check"></i></label>
+			                        </li>
+			                        <li>
+			                            <input name="schedule" id="schedule03" type="radio" value="">
+			                            <label for="schedule03"><span>매주</span><i class="icon_check"></i></label>
+			                        </li>
+			                        <li>
+			                            <input name="schedule" id="schedule04" type="radio" value="">
+			                            <label for="schedule04"><span>매월</span><i class="icon_check"></i></label>
+			                        </li>
+			                        <li>
+			                            <input name="schedule" id="schedule05" type="radio" value="">
+			                            <label for="schedule05"><span>매분기</span><i class="icon_check"></i></label>
+			                        </li>
+			                        <li>
+			                            <input name="schedule" id="schedule06" type="radio" value="">
+			                            <label for="schedule06"><span>매년</span><i class="icon_check"></i></label>
+			                        </li>
+			                    </ul>
+			                </div>
+			            </div>
+			            <div class="clearFix mt10">
+			            	<div class="fl">
+				            	<input type="text" value="" placeholder="09:00" style="width:86px"> - <input type="text" value="" placeholder="10:00" style="width:86px">
+				            </div>
+				            <div class="fl">
+				            	<input type="checkbox" name="" id="day" class="pl10 lh33"><label for="day" class="ml5 lh33">종일</label>
+				            </div>
+			            </div>
+		            </dd>
+		            <dt>위치</dt>
+					<dd><input type="text" placeholder="위치 추가" style="width:100%"></dd>
+					<dt>참석자</dt>
+					<dd>
+						<div class="search_inputWrap w100">
+							<input type="search" name="" placeholder="참석자 추가"><button class="search_btn"><i class="icon_search"></i></button>
+						</div>
+					</dd>
+					<dt>공개 여부</dt>
+					<dd>
+						<div class="select_box">
+							<button type="button" class="btn radio"><span>전체</span></button>
+		                    <ul class="select_lst">
+		                        <li>
+		                            <input name="open" id="open01" type="radio" value="">
+		                            <label for="open01"><span>공개</span><i class="icon_check"></i></label>
+		                        </li>
+		                        <li>
+		                            <input name="open" id="open02" type="radio" value="">
+		                            <label for="open02"><span>비공개</span><i class="icon_check"></i></label>
+		                        </li>
+		                    </ul>
+		                </div>
+					</dd>
+					<dt>설명 추가</dt>
+					<dd>
+						<input type="text" style="width:100%">
+					</dd>
+				</dl>
+			</div>
+			<div class="modal_footer">
+				<button type="button" class="btn select">저장</button>
+				<button type="button" class="btn close">취소</button>
 			</div>
 		</div>
 	</div>
@@ -124,7 +252,7 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
 		// right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
 	},
 	initialView: 'dayGridMonth',
-	initialDate: '2024-02-08',  //달력 처음 로드될때 표시되는 날짜
+	//initialDate: '2024-02-08',  //달력 처음 로드될때 표시되는 날짜
 	navLinks: true, // 요일이랑 날짜 클릭시 일단위,주단위로 보여주는 화면으로 넘어감
 	editable: false, // 드래그해서 수정 가능한지, 길게 확장도 가능
 	selectable: true,
