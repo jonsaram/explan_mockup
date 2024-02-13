@@ -117,12 +117,14 @@ html,body,.tbl_scroll{scrollbar-width:thin;scrollbar-color:white;}
 .lh20{line-height:20px!important}
 .lh33{line-height:33px!important}
 .alignItem{align-items:center!important;}
+.inline{display:inline-block;}
 .flex{display:flex;}
 .back60{background:rgba(60,62,138,.6)!important;}
 .back50{background:rgba(60,62,138,.5)!important;}
 .back100{background:#27187F!important;}
 .tl{text-align:left!important;}
 .tc{text-align:center!important;}
+.tr{text-align:right!important;}
 .fl{float:left!important;}
 .fr{float:right!important;}
 .clearFix:after{content:'';display:block;clear:both;}

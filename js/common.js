@@ -241,6 +241,21 @@
     });
 
 
+    /*==== tab ====*/
+    $(function() {
+        //$(".display").css("display","none");
+        $('div.tab_content').each(function() {
+            $(this).find('div.display:first').show();
+        });
+
+        $('.tab_wrap li').click(function() {
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active').siblings('li').removeClass('active');
+                $($(this).children().attr('href')).show("100").siblings('div.display').hide("100");
+            }
+        });
+    });
+
 })(window, window.jQuery);
 
 $(document).ready(function() {
