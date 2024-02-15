@@ -263,6 +263,20 @@
     });
 
 
+    /*============= table select ================*/
+    $(document).on("click", ".tbl01 tr", function(){
+        $(this).addClass('select').siblings('tr').removeClass('select');
+    });
+    // 외부 링크
+    $(document).bind('click', function(e) {
+      var $clicked = $(e.target);
+      if (!$clicked.parents().hasClass("tbl01")) {
+        $(".tbl01 tr").removeClass('select');
+      };
+    });
+
+
+
 })(window, window.jQuery);
 
 $(document).ready(function() {
