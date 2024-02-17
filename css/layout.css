@@ -98,9 +98,9 @@
 .sec_scroll.resize{margin-right:-10px;width:calc(100% + 10px);}
 .sec_scroll::-webkit-scrollbar-track {background:#f4f5fa;}
 .icon_bullet{margin:0 8px 2px 0;position:relative;display:inline-block;width:12px;height:12px;border-radius:6px;background:rgba(226,227,255,.43)}
-.icon_bullet:after{position:absolute;top:calc(50% - 2px);left:3px;content:'';display:inline-block;width:4px;height:4px;border-radius:3px;border:1px solid #27187F}
+.icon_bullet:after{position:absolute;top:calc(50% - 2px);left:3px;content:'';display:inline-block;width:7px;height:7px;border-radius:5px;border:1px solid #27187F}
 .modal_wrap .icon_bullet{margin:0 4px 0 0;background:none}
-.modal_wrap .icon_bullet:after{border-color:#686868}
+.modal_wrap .icon_bullet:after{width:4px;height:4px;border-radius:3px;border-color:#686868}
 
 /*fold 접고 닫기*/
 .container.collapse .lnb{right:initial;left:-180px;}
