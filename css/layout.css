@@ -86,7 +86,7 @@
 .lnb li ul li.active a{position:relative;background:#e7f4f7;color:#3ba8c3;font-weight:600;border-left:3px solid #3ba8c3;border-bottom:1px solid #fff}
 .lnb li ul li.active a:after{content: '';position:absolute;top:15px;right:5px;display:inline-block;border:5px solid transparent;border-left-color:#3ba8c3;}
 .lnb li li:first-child.active a{border-top:0}
-.lnb li li .lnb_tit02{padding-left:20px;position:relative;display:block;color:#606060;font-weight:600;font-size:15px;height:40px;line-height:40px;background:#f2f2f2;border-left:3px solid #a9a9a9;border-bottom:1px solid #fff;}
+.lnb li li .lnb_tit02{padding-left:20px;position:relative;display:block;color:#606060;font-weight:600;font-size:15px;height:40px;line-height:40px;background:#f2f2f2;border-left:3px solid #6d6d6d;border-bottom:1px solid #fff;}
 .lnb li li .lnb_tit02:after{content: '';position:absolute;top:17px;right:10px;display:inline-block;border:5px solid transparent;border-top-color:#a9a9a9;}
 .btn.fold{position:absolute;top:12px;right:-20px;border-top-left-radius:0;border-bottom-left-radius:0;width:20px;height:40px;padding:0;}
 .icon_arrow{margin-left:2px;display:inline-block;width:8px;height:8px;border-bottom:2px solid #797979;border-right:2px solid #797979;transform:rotate(135deg);}
