@@ -113,6 +113,7 @@
 .container.collapse .lnb > ul{display:none}
 .container.collapse .lnb .icon_arrow{margin:0 4px 0 0;transform:rotate(-45deg);}
 .container.collapse .cont_wrap{margin:0 0 0 16px;width:calc(100% - 32px);}
+.container.collapse .lnb .lnb_tit01{border-bottom:0}
 
 /*select box*/
 .select_box{position:relative;font-size:0.85rem;color:#444448;font-weight:normal;vertical-align:middle;background:#fff}
