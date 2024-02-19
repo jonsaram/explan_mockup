@@ -182,7 +182,6 @@
     });
 
     /*====== 테이블 헤더 고정 =======*/
-    var sl = 0;
     $(function(){
         $.fn.hasYScrollBar = function() {
             return (this.prop("scrollHeight") == 0 && this.prop("clientHeight") == 0) || (this.prop("scrollHeight") > this.prop("clientHeight"));
@@ -193,6 +192,7 @@
         };
 
         $(".tbl_body_scroll").scroll(function(event){
+            var sl = 0;
             // data 테이블 x축 스크롤을 움직일 때header 테이블 x축 스크롤을 똑같이 움직인다
             if (sl != $(".tbl_body_scroll").scrollLeft()) {
                 sl = $(".tbl_body_scroll").scrollLeft();
@@ -200,10 +200,11 @@
             }
         });
 
-
         if ($(".tbl_body_scroll").hasYScrollBar()) {
             //y축 스크롤이 있으면 스크롤 넓이인 8px만큼 header 마지막 열 크기를 늘린다
             $(".tbl_head colgroup col:last-child").width($(".tbl_body_scroll colgroup col:last-child").width() + 8 );
+        }else{
+            $(".tbl_head colgroup col:last-child").width();
         }
     });
 
