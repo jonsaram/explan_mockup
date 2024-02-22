@@ -308,6 +308,11 @@
     });
 
 
+    /*==== consulting active ====*/
+    $(document).on("click", ".listBtn li a", function(){
+        $('.listBtn li a').removeClass('active');
+        $(this).addClass('active');
+    });
 
 })(window, window.jQuery);
 

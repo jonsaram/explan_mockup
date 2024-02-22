@@ -140,7 +140,7 @@
 .select_box ul.select_lst li label:hover .icon_check,
 .select_box ul.select_lst li label.active .icon_check{position:absolute;top:9px;right:10px;display:inline-block;width:12px;height:6px;border:2px solid #27187F; border-top:0;border-right:0;transform:rotate(-45deg);}
 .viewHide{display:block;position:absolute !important;left:-9999px !important;width:1px;height:1px;line-height:0;overflow:hidden;font-size:0;text-indent:-9999px}
-.fl + .fl{margin-left:11px}
+.fl + .fl{margin-left:8px}
 
 /*section 영역*/
 .sec_wrap{padding:5px;display:flex;flex-wrap:wrap;justify-content:center;}
@@ -210,7 +210,7 @@
 /*search*/
 .search_area{margin-top:10px;margin-bottom:10px;width:100%;min-height:24px;position:relative;}
 .search_area:after{content:'';display:block;clear:both;}
-.dropdown + .search_inputWrap,button + button,button + .dropdown {margin-left:11px}
+.dropdown + .search_inputWrap,button + button,button + .dropdown {margin-left:8px}
 .search_area .tit01,.search_area .tit02{display:inline-block;min-width:67px;text-align:center;font-size:12px;font-weight:600;}
 .search_area .tit02{position:absolute;bottom:0}
 .search_inputWrap{position:relative;display:inline-block;}
@@ -501,7 +501,7 @@
 .com_btnArea{font-size:0;display:inline-block;vertical-align:middle;}
 
 /* tap */
-.tab_wrap{height:100%;}
+.tab_wrap{height:100%;position:relative;}
 .tab_wrap > ul{border-bottom:1px solid #c4c5c8;height:32px}
 .tab_wrap > ul:after{content:'';display:block;clear:both;}
 .tab_wrap > ul li{margin-right:-1px;float:left;text-align:center;color:#8A8C92;min-width:80px;padding:0 15px;font-size:15px;line-height:30px;cursor:pointer;border:1px solid #c4c5c8;}
@@ -509,9 +509,15 @@
 .tab_wrap > ul li a{color:#8A8C92}
 .tab_wrap > ul li.active{color:#27187F;font-weight:600;border-bottom:2px solid #27187F;background:#fff}
 .tab_wrap > ul li.active a{color:#27187F}
-
 .tab_content{height:calc(100% - 47px);}
 .tab_content .display{padding-top:15px;height:100%;display:none;}
+
+/* list btn */
+.listBtn{font-size:0;letter-spacing:0}
+.listBtn li{margin:0 10px 10px 0;display:inline-block;width:243px}
+.listBtn li a{width:100%;text-align:center;}
+.listBtn li a.active{color:#27187f;border:1px solid #968dcc;background:#f0eeff}
+.btn.add{position:absolute;right:0;top:0}
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
