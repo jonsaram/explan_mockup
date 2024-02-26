@@ -528,7 +528,7 @@
 .btn.add{position:absolute;right:0;top:0}
 
 /* work history */
-.workHistory_info{padding:15px 20px;border:1px solid #ccc;background:#F5F5F5}
+.workHistory_info{padding:15px 20px;border:1px solid #ccc;background:#F5F5F5;box-shadow:none;}
 .workHistory_info .info_wrap,
 .workHistory_info .work_history{margin:3px 0 0 20px}
 .workHistory_info .info_wrap > li,
@@ -542,7 +542,7 @@
 .work_history .info_wrap > li .info{width:calc(100% - 170px);color:#8A8C92}
 .work_history .info_wrap > li .info .custom{color:#27187F;font-weight:600}
 .work_history .info_wrap > li .info .state{color:#27187F;font-weight:600}
-.work_history{padding:50px 20px 15px;position:relative;border:1px solid #ccc;border-radius:5px;}
+.work_history{padding:50px 20px 15px;position:relative;border:1px solid #ccc;border-radius:5px;box-shadow:none;}
 .work_history h3{padding:5px 20px;position:absolute;top:0;left:0;right:0;border-radius:5px 5px 0 0;border-bottom:1px solid #e1e2e4;background:#F5F5F5}
 
 /* 반응형 */
