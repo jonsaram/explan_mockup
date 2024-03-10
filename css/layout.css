@@ -164,7 +164,7 @@
 .cont_box + .cont_box{margin-left:25px;}
 .cont_box.col3:nth-child(3){width:36%}
 .cont_box.col2 + .cont_box.col2{width:calc(50% - 12.5px)}
-.cont_box h3{font-size:16px;line-height:24px}
+.cont_box h3,h3{font-size:16px;line-height:24px}
 .cont_box h4{font-size:13px;}
 .cont_box h4 strong{font-weight:600;color:#27187F}
 .status + span{padding-left:5px;font-size:12px;vertical-align:middle;}
@@ -315,7 +315,7 @@
 .price{margin:0 0 2px 0;font-size:20px;font-weight:600;position:relative;z-index:1;}
 .prepare,.percent{font-size:11px;font-weight:600;position:relative;z-index:1;}
 .prepare{color:#8A8C92}
-.percent{color:#0066FF}
+.percent,.pointColr{color:#0066FF}
 .minus{color:#FF0000}
 .highcharts-figure{margin-top:-30px;width:100%}
 
@@ -381,6 +381,12 @@
 .approver_list .pay_up:after{content: '';position:absolute;top:0;right:0;display:inline-block;border:7px solid transparent;border-bottom-color:#333;}
 .approver_list .pay_down{font-size:0;position:absolute;top:calc(50% - 2px);right:42px;display:inline-block;width:12px;height:12px;}
 .approver_list .pay_down:after{content: '';position:absolute;top:0;right:0;display:inline-block;border:7px solid transparent;border-top-color:#333;}
+.approver_list input[type="checkbox"]{position:absolute;top:calc(50% - 7px);right:25px}
+.check_undo[type="checkbox"]{opacity:0;width:14px;height:14px}
+.check_undo[type="checkbox"]:checked + label .txt span{text-decoration:line-through;color:#afafaf}
+.check_undo[type="checkbox"] + label:before{content: "";position:absolute;top:calc(50% - 7px);right:25px;width:12px;height:12px;display:inline-block;border:1px solid #a5a5a5;border-radius:3px}
+.check_undo[type="checkbox"]:checked + label:before{content: "";position:absolute;top:calc(50% - 5px);right:25px;z-index:1;width:10px;height:5px;display:inline-block;border:2px solid #c6c6c6;border-top:0;border-right:0;transform:rotate(-45deg);}
+.check_undo[type="checkbox"]:checked + label:after{content: "";position:absolute;top:calc(50% - 7px);right:25px;width:12px;height:12px;display:inline-block;background:#ececec;border:1px solid #dadada;border-radius:3px}
 .potential .icon_users_group{display:inline-block;width:30px;height:30px;vertical-align:middle;border-radius:50%;background:rgba(59,168,195,.7) url(../img/icon_users_group.png) no-repeat 50% 60%;}
 .member_wrap{display:inline-block;vertical-align:middle;line-height:30px}
 .member_wrap .txt{font-size:14px;color:#8A8C92;vertical-align:middle;}
@@ -406,7 +412,12 @@
 .piechart_wrap .won{font-size:15px;color:#8A8C92;text-align:center;}
 .todoList_wrap{margin-top:10px}
 .todoList_wrap li{padding:0 0 8px}
-.todoList_wrap label{width: calc(100% - 20px);margin-left:-19px;padding:0 0 0 24px;cursor:pointer;font-size:12px;line-height:18px;vertical-align:middle;border-radius:4px;}
+.todoList_wrap label{position:relative;width: calc(100% - 20px);margin-left:-19px;padding:0 0 0 24px;cursor:pointer;font-size:12px;line-height:18px;vertical-align:middle;border-radius:4px;}
+.todoList_wrap .check_undo[type="checkbox"]{opacity:0;width:14px;height:14px}
+.todoList_wrap .check_undo[type="checkbox"]:checked + label{text-decoration:line-through;color:#afafaf}
+.todoList_wrap .check_undo[type="checkbox"] + label:before{content: "";position:absolute;top:calc(50% - 7px);left:5px;width:12px;height:12px;display:inline-block;border:1px solid #a5a5a5;border-radius:3px}
+.todoList_wrap .check_undo[type="checkbox"]:checked + label:before{content: "";position:absolute;top:calc(50% - 5px);left:6px;z-index:1;width:10px;height:5px;display:inline-block;border:2px solid #c6c6c6;border-top:0;border-right:0;transform:rotate(-45deg);}
+.todoList_wrap .check_undo[type="checkbox"]:checked + label:after{content: "";position:absolute;top:calc(50% - 7px);left:5px;width:12px;height:12px;display:inline-block;background:#ececec;border:1px solid #dadada;border-radius:3px}
 
 #file-input {position:absolute;width:1px;height:1px;line-height:1px;left:-5555px;}
 
@@ -544,6 +555,16 @@
 .work_history .info_wrap > li .info .state{color:#27187F;font-weight:600}
 .work_history{padding:50px 20px 15px;position:relative;border:1px solid #ccc;border-radius:5px;box-shadow:none;}
 .work_history h3{padding:5px 20px;position:absolute;top:0;left:0;right:0;border-radius:5px 5px 0 0;border-bottom:1px solid #e1e2e4;background:#F5F5F5}
+
+/*프로젝트 결재상신 리스트*/
+.project_list{padding:15px 20px;width:100%;background:#F5F5F5;border-radius:5px;box-shadow:none;}
+.project_list.line{max-height:140px;overflow:auto;border:1px solid #d8d8d8;background:#fff}
+.project_list ol li{padding-bottom:8px}
+.project_list ol li:last-child{padding-bottom:0;}
+.project_list .cont_top{min-height:24px}
+.down.up{margin-top:9px;display:inline-block;border:5px solid transparent;border-top-color:#333;}
+.up{margin-top:0;margin-bottom:4px;display:inline-block;border:5px solid transparent;border-bottom-color:#333;}
+
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
