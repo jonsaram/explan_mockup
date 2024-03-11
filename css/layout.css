@@ -262,6 +262,10 @@
 .tbl01 > table > thead > tr > th:last-child > * {border-right:0 none;}
 .tbl01 > table > tfoot > tr > *,
 .tbl01 > table > tbody > tr > * {padding:3px 10px;height:42px;color:#333;line-height:16px;font-size:12px;border-bottom:1px solid #bcbec1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.tbl01 > table > tfoot > tr > *{color:#27187f;font-weight:600;background:#f0eeff;}
+.row2 .tbl01 > table > tfoot > tr > td{border-right:1px solid #bcbec1;}
+.row2 .tbl01 > table > tfoot > tr:nth-child(1) > td:last-child{border-right:0}
+
 .tbl01 > table > tbody > tr > [rowspan] {border-left: 1px solid #e8e8e8;}
 .row2 .tbl01 > table > tbody > tr > *{border-right:1px solid #bcbec1;}
 .tbl01 > table > tfoot > tr > *:last-child,
@@ -565,6 +569,7 @@
 .down.up{margin-top:9px;display:inline-block;border:5px solid transparent;border-top-color:#333;}
 .up{margin-top:0;margin-bottom:4px;display:inline-block;border:5px solid transparent;border-bottom-color:#333;}
 
+.total{margin-bottom:-19px;display:inline-block;vertical-align:bottom;}
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
