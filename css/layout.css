@@ -570,7 +570,7 @@
 .down.up{margin-top:9px;display:inline-block;border:5px solid transparent;border-top-color:#333;}
 .up{margin-top:0;margin-bottom:4px;display:inline-block;border:5px solid transparent;border-bottom-color:#333;}
 
-.total{margin:0 0 -15px 10px;display:inline-block;vertical-align:bottom;}
+.total{margin:0 10px -15px 10px;display:inline-block;vertical-align:bottom;}
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
