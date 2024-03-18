@@ -347,6 +347,7 @@
 .percent,.pointColr{color:#0066FF}
 .minus{color:#FF0000}
 .highcharts-figure{margin-top:-30px;width:100%}
+.highcharts-figure2{width:100%}
 
 /*modal popup*/
 .modal_wrap{display:none;position:fixed;top:0;bottom:0;left:0;right:0;font-size:0;text-align:center;overflow-y:auto;background-color:rgba(0,0,0,.3);z-index:45;}
@@ -612,7 +613,9 @@
 .company_cont{float:left;width:calc(100% - 317px);border-top:1px solid #6e7bac;}
 .company_cont:after{content:'';display:block;clear:both;}
 .company_cont .col2{float:left;width:calc(50% - 10px)}
+.company_cont .col3{float:left;width:calc(33.33333% - 20px)}
 .company_cont .col2 + .col2{margin-left:20px}
+.company_cont .col3 + .col3{margin-left:30px}
 .com_cont_tit{margin:10px 0 0 0;font-size:25px;font-weight:600;}
 .com_cont_stit{margin:35px 0 5px 0;padding:0 0 0 25px;height:27px;position:relative;font-size:20px;font-weight:600;background:url(../img/icon_com_sub_tit.png) 0 50% no-repeat;}
 .com_cont_stit.none{padding:0;background:none}
@@ -629,9 +632,10 @@
 .icon_check{padding-left:18px;position:relative;}
 .icon_check:after{content: "";position:absolute;top:calc(50% - 5px);left:0;width:10px;height:5px;display:inline-block;border:2px solid #b4bfec;border-top:0;border-right:0;transform:rotate(-45deg);}
 .com_bottom_info{margin-top:15px;padding:20px;font-size:14px;line-height:22px;border-radius:5px;background:#f1f1f1}
-.bg_blue td{background:#d8dff2}
-.bg_gray td{background:#f1f1f1}
-.num{margin:-2px 0 0 5px;color:#5b629c;font-size:15px;display:inline-block;vertical-align:top}
+.bg_blue td{font-weight:600;background:#d8dff2}
+.bg_gray td{font-weight:600;background:#f1f1f1}
+.com_tbl .num{margin:-2px 0 0 5px;color:#5b629c;font-size:15px;display:inline-block;vertical-align:top}
+.stat_import_tit{margin:0 auto;color:#262a2d;text-align:center;font-size:14px;font-weight:600;width:195px;height:40px;line-height:40px;border:1px solid #6270ad;border-radius:25px;background:#f0f5f9}
 
 /* 반응형 */
 @media screen and (max-width: 1770px) { /* PC */
