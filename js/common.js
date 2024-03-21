@@ -353,4 +353,6 @@
 
 $(document).ready(function() {
     $('.select_box').dropdown();
+
+
 });
