@@ -182,6 +182,7 @@
     });
 
     /*====== 테이블 헤더 고정 =======*/
+
     $(function(){
         $.fn.hasYScrollBar = function() {
             return (this.prop("scrollHeight") == 0 && this.prop("clientHeight") == 0) || (this.prop("scrollHeight") > this.prop("clientHeight"));
@@ -234,7 +235,10 @@
         }else{
             $(".tbl_head2 colgroup col:last-child").width();
         }
+
     });
+
+
 
     /*==== lnb 영역 접고/닫기 버튼 ====*/
     $(document).on("click", ".btn.fold", function(){
@@ -353,6 +357,8 @@
 
 $(document).ready(function() {
     $('.select_box').dropdown();
+});
 
-
+$(window).resize(function() {
+   document.location.reload();
 });
