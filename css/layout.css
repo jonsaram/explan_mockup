@@ -629,11 +629,11 @@ figure .status_wrap li{margin-bottom:17px}
 .up{margin-top:0;margin-bottom:4px;display:inline-block;border:5px solid transparent;border-bottom-color:#333;}
 
 .total{margin:0 10px -15px 10px;display:inline-block;vertical-align:bottom;}
-.cont_top .info{margin:0 0 -5px 10px;font-weight:normal; display:inline-block;vertical-align:bottom;}
+.cont_top .info{margin:0 0 -3px 10px;font-weight:normal; display:inline-block;vertical-align:bottom;}
 .cont_top .info strong{margin:0 10px}
-.cont_top .total{margin:0 10px -5px 10px;display:inline-block;vertical-align:bottom;}
-.cont_top:has(.lh33) .total{margin:0 10px -15px 10px}
-.cont_top:has(.lh33) .info{margin:0 0 -15px 10px;}
+.cont_top .total{margin:0 10px -3px 10px;display:inline-block;vertical-align:bottom;}
+.cont_top:has(.lh33) .total{margin:0 10px -10px 10px}
+.cont_top:has(.lh33) .info{margin:0 0 -10px 10px;}
 
 /* customer dashboard */
 .img_company{margin:63px 0 6px 0}
