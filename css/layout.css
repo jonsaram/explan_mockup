@@ -542,9 +542,8 @@
 
 .com_plan_list{margin-top:20px}
 .com_plan_list li:after{content:'';display:block;clear:both;}
-.com_plan_list li span{padding-right:10px;float:left;width:260px;font-size:18px;line-height:32px;text-align:right;}
-.com_plan_list li strong{float:left;width:180px}
-.com_plan_list li .com-plan-bar{float:left;width:200px}
+.com_plan_list li span{padding-right:10px;float:left;width:250px;font-size:17px;line-height:32px;text-align:right;}
+.com_plan_list li .com-plan-bar{float:left;width:180px}
 .com_plan_list li .com_plan_down{margin-left:125px;padding:5px 5px 0 0;color:#fff;text-align:center;font-size:18px;font-weight: 600;float:left;width:90px;height:44px;background:url(../img/bg_arrow.png) no-repeat;}
 .com-plan-bar {position:relative; color:#fff;font-size:14px;line-height:32px;height:32px;margin-bottom:20px;border-left:1px solid #ccc;}
 .com-plan-bar:before{position:absolute;left:-1px;top:-20px;content:'';display:inline-block;width:1px;height:20px;background:#ccc}
@@ -555,7 +554,7 @@
 .com-plan-bar.minus .data{background-color:#ebc7c7;}
 .com-plan-bar > .data > span{color:#333;font-weight:600;}
 .com-plan-bar .data > .txtWrap > span{margin-right:10px;}
-.com-plan-bar .txtWrap{margin-left:calc(100% + 10px);min-width:160px;font-size:18px;font-weight:600;color:#666eb6;}
+.com-plan-bar .txtWrap{margin-left:calc(100% + 10px);min-width:160px;font-size:18px;letter-spacing:-0.05em;font-weight:600;color:#666eb6;}
 
 /* comment */
 .comment_wrap{padding:5px 0 10px;}
@@ -863,8 +862,8 @@ figure .status_wrap li{margin-bottom:17px}
 
 .col2_left{float:left;width:427px}
 .col2_right{margin-left:58px;float:left;width:calc(100% - 485px)}
-.col2_left02{float:left;width:396px}
-.col2_right02{margin-left:42px;float:left;width:calc(100% - 438px)}
+.col2_left02{float:left;width:376px}
+.col2_right02{margin-left:32px;float:left;width:calc(100% - 408px)}
 
 
 /* 반응형 */
@@ -872,6 +871,9 @@ figure .status_wrap li{margin-bottom:17px}
 /*	.btn_arrow{display:block;}
 	.header_right{width:181px}*/
 	.piechart_wrap.stateWrap {position:absolute;left:calc(40% - 20px);}
+	.col2_left02{float:none;width:630px;padding-bottom:20px}
+	.col2_left02 .com_info_blue{padding:30px 90px 30px 120px}
+	.col2_right02{margin-left:0;float:none;width:100%}
 
 	.wrap.resize{white-space:inherit;}
 	.wrap.resize .gnb{height:137px;border:1px solid #c4c5c8;border-top:0;}
