@@ -173,7 +173,7 @@
 .comp_col2 .cont_box h3{font-size:22px;}
 .cont_box.col3:nth-child(3){width:33%}
 .cont_box.col2 + .cont_box.col2{width:calc(50% - 12.5px)}
-.cont_box h3,h3{font-size:16px;line-height:24px}
+.cont_box h3,h3{font-size:18px;line-height:24px}
 .cont_box h4{font-size:13px;}
 .cont_box h4 strong{font-weight:600;color:#27187F}
 .status + span{padding-left:5px;font-size:12px;vertical-align:middle;}
