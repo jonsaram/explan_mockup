@@ -414,7 +414,7 @@
 .modal_header .btn_close .sp:after{position:absolute;left:8px;content:' ';height:20px;width:2px;background-color:#000;}
 .modal_header .btn_close .sp:before{transform:rotate(45deg);}
 .modal_header .btn_close .sp:after{transform:rotate(-45deg);}
-.modal_body{padding:0 8px;text-align:left;height:calc(100% - 45px)}
+.modal_body{padding:0 5px;text-align:left;height:calc(100% - 45px)}
 .modal_body.resize{margin-right:-10px}
 .modal_header:has(.tit) + .modal_body{overflow:auto}
 .modal_body h3{margin:15px 0 8px; font-size:15px;font-weight:600}
@@ -422,8 +422,8 @@
 .modal_body p{padding-top:15px;font-size:11px;line-height:16px}
 .info_wrap{margin-top:20px;font-size:13px;font-weight:600;width:100%}
 .info_wrap.search{padding:10px 10px 0;border:1px solid #ccc;border-radius:5px;background:#f4f5fa}
-.info_wrap.search > li > label{width:60px!important}
-.info_wrap.search > li > .info{width:calc(100% - 60px)!important}
+.info_wrap.search > li > label{width:55px!important}
+.info_wrap.search > li > .info{width:calc(100% - 55px)!important}
 .info_wrap:after{content:'';display:block;clear:both;}
 .info_wrap dt,.info_wrap dd{float:left;margin-bottom:10px;}
 .info_wrap dt{padding:0 10px 0 0;text-align:left;width:70px;line-height:33px}
@@ -656,7 +656,7 @@ figure .status_wrap li{margin-bottom:17px}
 .tab_wrap > ul li.active{color:#27187F;font-weight:600;border-bottom:2px solid #27187F;background:#fff}
 .tab_wrap > ul li.active a{color:#27187F}
 .tab_content{width:100%;height:calc(100% - 47px);overflow:auto;}
-.tab_content .display{padding-top:15px;height:100%;display:none;}
+.tab_content .display{padding:15px 5px 0;height:100%;display:none;}
 
 /* list btn */
 .listBtn{font-size:0;letter-spacing:0}
