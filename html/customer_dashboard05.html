@@ -43,7 +43,7 @@
 			        </button>
 			    </div>
 				<button type="button" class="btn_arrow"></button>
-				<a href="#" class="alarm">알림<span class="alarm_count">3</span></a>
+				<a href="#modal-ex01" class="alarm">알림<span class="alarm_count">3</span></a>
 				<a href="#" class="user_login"><span>이희성</span></a>
 				<ul class="user_menu">
 					<li><a href="../admin/admin_01.html"><i class="icon_admin"></i>관리자 페이지</a></li>
@@ -70,9 +70,12 @@
 		<div class="cont_wrap">
 			<div class="cont_top">
 				<h2><i class="icon_bullet"></i>기업폴더관리</h2>
-				<nav class="side_area fr"><a href=""><strong>기본폴더</strong></a> &gt; <a href="">새폴더</a></nav>
 			</div>
-
+			<section class="sec_wrap mb15">
+				<div class="cont_box">
+					<a href="#"><strong>기본폴더</strong></a> &gt; <a href="#">새폴더</a>
+				</div>
+			</section>
 			<div class="sec_scroll">
 				<section class="sec_wrap h100">
 					<!-- 분류별 실적 -->
@@ -183,98 +186,89 @@
 	</div>
 
 
-	<!-- 게시글 작성 팝업 -->
-	<div class="modal_wrap" id="modal-ex">
-		<div class="modal" style="width:600px;height:640px;">
+	<!-- 알림 팝업 -->
+	<div class="modal_wrap" id="modal-ex01">
+		<div class="modal" style="width:600px;height:500px;">
 			<div class="modal_header">
-				<strong class="tit">게시글 작성</strong>
+				<strong class="tit">알림</strong>
 				<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
 			</div>
 			<div class="modal_body">
-				<ul class="info_wrap col2 mt15">
-					<li class="w100">
-						<label>제목</label>
-						<div class="info"><input type="text" style="width:100%"></div>
-					</li>
-					<li class="ml0">
-						<label>게시판 선택</label>
-						<div class="info">
-							<!-- 실글 선택 -->
-							<div class="select_box" style="width:100%">
-								<button type="button" class="btn radio"><span>선택</span></button>
-			                    <ul class="select_lst">
-			                        <li>
-			                            <input name="board" id="board01" type="radio" value="">
-			                            <label for="board01">공지사항<i class="icon_check"></i></label>
-			                        </li>
-			                        <li>
-			                            <input name="board" id="board02" type="radio" value="">
-			                            <label for="board02">영업자료<i class="icon_check"></i></label>
-			                        </li>
-			                        <li>
-			                            <input name="board" id="board03" type="radio" value="">
-			                            <label for="board03">서식함<i class="icon_check"></i></label>
-			                        </li>
-			                    </ul>
-			                </div>
-						</div>
-					</li>
-					<li class="ml14">
-						<label>권한 선택</label>
-						<div class="info">
-							<!-- 실글 선택 -->
-							<div class="select_box" style="width:100%">
-								<button type="button" class="btn radio"><span>선택</span></button>
-			                    <ul class="select_lst">
-			                        <li>
-			                            <input name="authority" id="authority01" type="radio" value="">
-			                            <label for="authority01">최고관리자<i class="icon_check"></i></label>
-			                        </li>
-			                        <li>
-			                            <input name="authority" id="authority02" type="radio" value="">
-			                            <label for="authority02">관리자<i class="icon_check"></i></label>
-			                        </li>
-			                        <li>
-			                            <input name="authority" id="authority03" type="radio" value="">
-			                            <label for="authority03">본부장<i class="icon_check"></i></label>
-			                        </li>
-			                        <li>
-			                            <input name="authority" id="authority04" type="radio" value="">
-			                            <label for="authority04">지사장<i class="icon_check"></i></label>
-			                        </li>
-			                        <li>
-			                            <input name="authority" id="authority05" type="radio" value="">
-			                            <label for="authority05">FA<i class="icon_check"></i></label>
-			                        </li>
-			                    </ul>
-			                </div>
-						</div>
-					</li>
-					<li class="w100 ml0">
-						<div class="info w100">
-							<textarea class="w100" rows="13"></textarea>
-						</div>
-					</li>
-					<li class="w100 ml0">
-						<label>첨부파일</label>
-						<div class="info">
-							<button type="button" class="stateBtn file"><span>파일선택</span></button>
-		            		<input name="file" type="file" id="file-input" tabindex="-1" title="파일찾기">
-							<div class="approver_list_wrap person" style="max-height:95px">
-								<ul class="approver_list">
-									<li><span class="txt">첨부파일 입니다.txt / 15.1 Mb</span><button class="pay_close">닫기</button></li>
-									<li><span class="txt">첨부파일 입니다2.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
-									<li><span class="txt">첨부파일 입니다3.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
-									<li><span class="txt">첨부파일 입니다4.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-				</ul>
+				<div class="cont_top clearFix mt20">
+					<h3 class="fl font16 lh33 mtb0">알림 리스트</h3>
+					<a href="#modal-ex01" class="btn fl">선택 항목 삭제</a>
+				</div>
+				<div class="tbl01 col">
+					<table>
+						<caption>표 캡션</caption>
+						<colgroup>
+							<col style="width:45px;" />
+							<col style="width:130px;"/>
+							<col style="*"/>
+							<col style="width:60px;"/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"><input type="checkbox"></th>
+								<th scope="col">도착시간</th>
+								<th scope="col">알림내용</th>
+								<th scope="col">상태</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<div class="tbl01 col" style="max-height:253px;overflow-y:auto;">
+					<table>
+						<caption>표 캡션</caption>
+						<colgroup>
+							<col style="width:45px;" />
+							<col style="width:130px;"/>
+							<col style="*"/>
+							<col style="width:60px;"/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2024-04-24 12:14:25</td>
+								<td class="tl">홍길동이 결재를 요청 하였습니다.</td>
+								<td>New</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2024-04-24 12:14:25</td>
+								<td class="tl">실적이 입력되었습니다. 누적 실적을 확인하세요.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2024-04-24 12:14:25</td>
+								<td class="tl">갑돌이님 팀원이 일정을 등록 하였습니다.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2024-04-24 12:14:25</td>
+								<td class="tl">갑돌이님 팀원이 일정을 등록 하였습니다.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2024-04-24 12:14:25</td>
+								<td class="tl">갑돌이님 팀원이 일정을 등록 하였습니다.</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2024-04-24 12:14:25</td>
+								<td class="tl">갑돌이님 팀원이 일정을 등록 하였습니다.</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 			<div class="modal_footer">
-				<button type="button" class="btn select">등록</button>
-				<button type="button" class="btn close">취소</button>
+				<button type="button" class="btn close">닫기</button>
 			</div>
 		</div>
 	</div>
