@@ -330,13 +330,13 @@
     });
     /*==== allup Toggle ====*/
     $(document).on("click", ".allupToggle", function(){
-        $(this).parent().parent().children().siblings(".cont_top").children().children().closest('.upDownToggle').children().addClass('down');
-        $(this).parent().parent().children().siblings(".cont_box").addClass('upDown');
+        $(this).parent().parent().children().children().siblings(".cont_top").children().children().closest('.upDownToggle').children().addClass('down');
+        $(this).parent().parent().children().children().siblings(".cont_box").addClass('upDown');
     });
     /*==== alldown Toggle ====*/
     $(document).on("click", ".alldownToggle", function(){
-        $(this).parent().parent().children().siblings(".cont_top").children().children().closest('.upDownToggle').children().removeClass('down');
-        $(this).parent().parent().children().siblings(".cont_box").removeClass('upDown');
+        $(this).parent().parent().children().children().siblings(".cont_top").children().children().closest('.upDownToggle').children().removeClass('down');
+        $(this).parent().parent().children().children().siblings(".cont_box").removeClass('upDown');
     });
 
     /*==== Folder Menu ====*/

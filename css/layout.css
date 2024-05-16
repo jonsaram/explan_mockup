@@ -168,7 +168,8 @@
 .cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .right, .right_35{margin-left:20px;width:calc(35% - 20px)}
 .cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .left .cont_box.left{width:65%}
 .cont_wrap.lnb_none > .sec_scroll > .sec_wrap > .left .cont_box.right{width:calc(35% - 25px);position:relative;}
-.cont_box.col3{height:100%;overflow:auto;}
+.cont_wrap_scroll{padding-right:5px;height:calc(100% - 43px);overflow:auto;}
+.cont_box.col3{height:100%;}
 .cont_box.col3,.cont_box.col3:nth-child(2){width:calc(33.333% - 25px)}
 .sec_wrap.col60_40{padding:0;height:100%;width:100%;}
 .sec_wrap.col60_40 .left{width:25%;flex:1 1 auto;}
