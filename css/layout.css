@@ -936,6 +936,12 @@ figure .status_wrap li{margin-bottom:17px}
 .share_msg li .close:after{position:absolute;top:0;left:6px;content:' ';width:1px;height:12px;background-color:#333;transform:rotate(-45deg);}
 .share_msg li button{vertical-align:top;line-height:30px;min-width:23px}
 
+.photo_list{margin:20px 0 0 -15px}
+.photo_list:after{content:'';display:block;clear:both;}
+.photo_list li{margin-left:15px;float:left;text-align:center;}
+.photo_list li .photo_wrap{margin-bottom:10px}
+.photo_list li .btn{margin-bottom:10px;display:block;width:100px;height:130px;}
+
 /* loadingBar */
 .preloader-wrapper {
   display: inline-block;
