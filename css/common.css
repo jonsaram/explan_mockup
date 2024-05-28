@@ -133,8 +133,8 @@ html,body,.tbl_scroll{scrollbar-width:thin;scrollbar-color:white;}
 .pd1520{padding:15px 20px!important}
 
 .w100{width:100%!important}
-.w50{width:calc(50% - 10px)}
-.w50 + .w50{padding-left:20px;margin-left:20px;}
+.w50{width:50%}
+.w50 + .w50{padding-left:20px;margin:0}
 .w66{width:66.6666%}
 .w33{width:calc(33.3333% - 25px)}
 .w66 + .w33{margin-left:25px}
