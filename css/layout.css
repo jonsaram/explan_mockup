@@ -425,6 +425,7 @@
 .modal_header .btn_zoomInOut,.btn_zoomInOut{position:absolute;top:11px;right:30px;width:16px;height:20px;background:url(../img/icon_enlarge.png) no-repeat;}
 .modal_header .btn_zoomInOut.in, .btn_zoomInOut.in{background:url(../img/icon_reduction.png) no-repeat;}
 .btn_zoomInOut.in{top:5px;right: 0}
+.modal_header .btn_zoomInOut.in{top: 11px;right: 30px;}
 .modal_header .btn_zoomInOut .txt{font-size:0;opacity:0;}
 .modal_body{padding:0 5px;text-align:left;height:calc(100% - 45px)}
 .modal_body.resize{margin-right:-10px}
