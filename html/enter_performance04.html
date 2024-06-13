@@ -96,6 +96,7 @@
 		                <button class="btn select fl">검색</button>
 		            </div>
 		            <div class="search_right">
+		            	<a href="#modal-ex04" class="btn fl">기업자문보고서</a>
 						<button type="button" class="btn fl"><i class="icon_download"></i> Excel 다운로드</button>
 						<!-- 실글 선택 -->
 						<div class="select_box fl" style="width:132px">
@@ -374,6 +375,61 @@
 			</div>
 			<div class="modal_footer">
 				<button type="button" class="btn close">닫기</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 기업자문보고서 등록 팝업 -->
+	<div class="modal_wrap" id="modal-ex04">
+		<div class="modal" style="width:600px;height:640px;">
+			<div class="modal_header">
+				<strong class="tit">기업자문보고서 등록</strong>
+				<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+			</div>
+			<div class="modal_body">
+				<ul class="info_wrap col2 mt15">
+					<li>
+						<label>회사명</label>
+						<div class="info">이오에프</div>
+					</li>
+					<li>
+						<label>보고년월</label>
+						<div class="info">2024년 05월</div>
+					</li>
+					<li>
+						<label>싱품명</label>
+						<div class="info">월자문 50만</div>
+					</li>
+					<li>
+						<label>보고자</label>
+						<div class="info">위성열</div>
+					</li>
+					<li class="w100">
+						<label>보고내용</label>
+						<div class="info">
+							<textarea class="w100" rows="13"></textarea>
+						</div>
+					</li>
+					<li class="w100 ml0">
+						<label>첨부파일</label>
+						<div class="info">
+							<button type="button" class="stateBtn file"><span>파일선택</span></button>
+		            		<input name="file" type="file" id="file-input" tabindex="-1" title="파일찾기">
+							<div class="approver_list_wrap person" style="max-height:95px">
+								<ul class="approver_list">
+									<li><span class="txt">첨부파일 입니다.txt / 15.1 Mb</span><button class="pay_close">닫기</button></li>
+									<li><span class="txt">첨부파일 입니다2.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
+									<li><span class="txt">첨부파일 입니다3.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
+									<li><span class="txt">첨부파일 입니다4.txt / 18.1 Mb</span><button class="pay_close">닫기</button></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="modal_footer">
+				<button type="button" class="btn select">등록</button>
+				<button type="button" class="btn close">취소</button>
 			</div>
 		</div>
 	</div>
