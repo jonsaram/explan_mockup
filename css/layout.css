@@ -553,7 +553,7 @@
 .photo_wrap.no_img:after{content:'';width:98px;height:128px;display:inline-block;background:url(../img/icon_noimg.png) no-repeat 0 bottom;background-size:contain;}
 .photo_wrap + .info_wrap{margin-top:5px;float:left;width:calc(100% - 115px);}
 .photo_wrap.sm{width:52px;height:66px;}
-.info_wrap > li{margin-bottom:10px;width:100%}
+.info_wrap > li{margin-bottom:10px;width:100%;}
 .info_wrap > li > label{float:left;width:100px;line-height:33px}
 .info_wrap > li .info{float:left;width:calc(100% - 100px);}
 .info_wrap.personnel{margin-top:40px;position:relative;z-index:2;}
